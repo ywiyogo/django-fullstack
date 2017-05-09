@@ -1,0 +1,8 @@
+{% load markdownify %}
+
+Blog test
+
+{% for post in posts %}
+{{ post | markdown | safe }}
+
+{% endfor %}
